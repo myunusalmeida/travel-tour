@@ -1,0 +1,34 @@
+.travel-packages-swiper {
+    .travel-package-wrapper {
+        .travel-package-slide {
+            width: 23%;
+
+            @media screen and (max-width: 768px) {
+                width: 60%;
+            }
+        }
+    }
+}
+
+.swiper-pagination {
+    display: flex;
+    column-gap: 10px;
+    right: 0;
+
+    .arrow-pagination {
+        background-color: $primary_color;
+        color: $white_color;
+        padding: 10px 30px;
+        border-radius: $primary_border_radius;
+        transition: $primary_transition;
+
+        &:hover {
+            background-color: $secondary_color;
+        }
+        
+        @media screen and (max-width: 768px) {
+            padding: 5px 20px;
+        }
+
+    }
+}

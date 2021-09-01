@@ -1,0 +1,28 @@
+.btn-primary-travel {
+    background-color: $primary_color;
+    color: $white_color;
+    border-radius: $primary_border_radius;
+    transition: $primary_transition;
+    padding-left: 20px;
+    padding-right: 20px;
+
+    &:hover {
+        background-color: $secondary_color;
+        color: $white_color;
+    }
+}
+
+.btn-login {
+    background-color: transparent;
+    color: $black_color;
+    border-radius: $primary_border_radius;
+    font-weight: 500;
+    transition: $primary_transition;
+    padding-left: 20px;
+    padding-right: 20px;
+    
+    &:hover {
+        background-color: $primary_color;
+        color: $white_color;
+    }
+}

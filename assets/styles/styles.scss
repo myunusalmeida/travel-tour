@@ -1,0 +1,17 @@
+@import './fonts';
+@import './variables';
+@import './globals';
+
+@import './atoms/buttons';
+@import './atoms/inputs';
+
+@import './components/navbar';
+@import './components/carousel';
+@import './components/cards';
+@import './components/swiper';
+@import './components/testimonials';
+@import './components/footer';
+
+@import './pages/homepage';
+@import './pages/travel_packages';
+@import './pages/travel_detail';

@@ -1,0 +1,96 @@
+.carousel {
+    .header-carousel-content {
+        width: 100%;
+        min-height: 460px;
+        background-size: cover;
+        background-position: center;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .header-title {
+            font-size: 46px;
+            font-weight: 800;
+            color: $white_color;
+            text-align: center;
+            width: 80%;
+
+            @media screen and (max-width: 768px) {
+                font-size: 28px;
+            }
+        }
+
+        .header-description {
+            font-size: 16px;
+            font-weight: 500;
+            color: $white_color;
+            text-align: center;
+            width: 50%;
+
+            @media screen and (max-width: 768px) {
+                width: 80%;
+                font-size: 14px;
+            }
+        }
+
+        .btn {
+            font-size: 14px;
+        }
+
+        @media screen and (max-width: 768px) {
+            min-height: 340px;
+        }
+    }
+
+    .carousel-control {
+        opacity: 1;
+        background-color: $white_color;
+        width: 36px;
+        height: 36px;
+        border-radius: $primary_border_radius;
+        display: absolute;
+        top: 50%;
+        transition: $primary_transition;
+
+        @media screen and (max-width: 768px) {
+            height: 36px;
+            width: 36px;
+        }
+
+        &.carousel-control-prev {
+            left: 20px;
+
+            @media screen and (max-width: 768px) {
+                left: 10px;
+            }
+        }
+
+        &.carousel-control-next {
+            right: 20px;
+
+            @media screen and (max-width: 768px) {
+                right: 10px;
+            }
+        }
+
+        span {
+            filter: invert(1);
+            width: 20px;
+            transition: $primary_transition;
+
+            @media screen and (max-width: 768px) {
+                width: 14px;
+            }
+        }
+
+        &:hover {
+            background-color: $primary_color;
+
+            span {
+                filter: invert(0);
+            }
+        }
+    }
+}

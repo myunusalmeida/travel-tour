@@ -1,0 +1,36 @@
+.getstarted-section {
+    position: relative;
+    margin-top: 500px;
+    margin-bottom: 50px;
+    background-color: $black_color;
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 500px;
+
+        .section-title {
+            font-size: 52px;
+            font-weight: 700;
+            color: $white_color;
+            text-align: center;
+            margin-bottom: 20px;
+
+            @media screen and (max-width: 768px) {
+                font-size: 38px;
+            }
+        }
+
+        .section-description {
+            color: $white_color;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .btn-primary-travel {
+            padding: 12px 30px;
+        }
+    }
+}
